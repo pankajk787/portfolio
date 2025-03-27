@@ -3,6 +3,7 @@ import LetsConnect from "./LetsConnect";
 import Lottie from "react-lottie-player";
 import animationData from "../lotties/person-coding.json";
 import { aboutMe } from "../constants";
+import TypingText from "./TypingText";
 
 
 // lottie config
@@ -39,9 +40,7 @@ const Hero = () => {
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[80px] leading-[80px] w-full">
           <span className="text-gradient">{aboutMe.name}</span>
         </h1>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          {aboutMe.intro}
-        </p>
+          <TypingText text={aboutMe.intro} speed={0.08} className={`${styles.paragraph} max-w-[470px] mt-5`}/>
       </div>
 
       <div
