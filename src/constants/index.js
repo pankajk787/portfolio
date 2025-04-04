@@ -412,8 +412,8 @@ export const projects = [
   {
     id: "project-7",
     title: "Trans-fi",
-    github: "",
-    link: "",
+    github: "https://github.com/pankajk787/trans-fi",
+    link: "https://trans-fi.onrender.com/",
     image: transferfi,
     content:
       "",
