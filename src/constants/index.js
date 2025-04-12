@@ -22,7 +22,6 @@ import {
 } from "react-icons/ai";
 
 import {
-  SiDjango,
   SiJavascript,
   SiBootstrap,
   SiReact,
@@ -31,26 +30,12 @@ import {
   SiPython,
   SiCplusplus,
   SiC,
-  SiRubyonrails,
-  SiJquery,
-  // SiVisualstudiocode,
   SiPostman,
   SiGit,
   SiMysql,
-  SiSolidity,
-  SiChartdotjs,
   SiVite,
-  SiArduino,
-  SiWeb3Dotjs,
-  SiIpfs,
-  SiDotnet,
-  SiTwilio,
-  SiFlutter,
-  SiReplit,
   SiFlask,
-  SiGooglemaps,
   SiOpenai,
-  SiGooglecloud,
   SiNextdotjs,
   SiRedux,
   SiExpress,
@@ -64,20 +49,15 @@ import {
   SiCss3,
   SiFigma,
   SiTypescript,
-  SiTypeorm
+  SiTypeorm,
+  SiEjs
 } from "react-icons/si";
 
 import {
   FaAws,
-  FaHardHat,
-  FaReact
 } from "react-icons/fa";
 
-import {
-  IoIosNotificationsOutline
-} from "react-icons/io";
-
-import { DiCss3, DiJava, DiMsqlServer, DiRedis, DiSqllite, DiVisualstudio } from "react-icons/di";
+import { DiCss3, DiJava, DiRedis, DiSqllite, DiVisualstudio } from "react-icons/di";
 import { TbBrandFramerMotion, TbBrandReactNative } from "react-icons/tb";
 
 export const resumeLink = "https://drive.google.com/file/d/13kE3iHWGHE9j4rf6t5sYHCEWoHjgJXUp/view?usp=sharing";
@@ -108,7 +88,6 @@ export const  navLinks = [
   },
 ];
 
-// Add your past academic experiences here
 export const educationList = [
   {
     id: "education-1",
@@ -130,7 +109,6 @@ export const educationList = [
   },
 ];
 
-// Add your software developments skills here for example - programming languages, frameworks etc.
 export const skills = [
   {
     title: "Programming Languages",
@@ -294,7 +272,6 @@ export const skills = [
   },
 ];
 
-// Add your current/past professional work experience here
 export const experiences = [
   {
     organisation: "Unizap",
@@ -306,7 +283,7 @@ export const experiences = [
         duration: "June 2023 - Present",
         content: [
           {
-            text: "Contributed in building scalable solutions and features for the Ubizap Seller Portal and Customer facing storefront.",
+            text: "Contributed in building scalable solutions and features for the Unizap Seller Portal and Customer facing storefront.",
             link: "https://partner.unizap.ai/"
           },
           {
@@ -371,16 +348,16 @@ export const experiences = [
   }
 ];
 
-// Add information about all the projects to be listed out in your portfolio
 export const projects = [
   {
     id: "project-1",
-    title: "DevDribble",
-    github: "https://github.com/pankajk787/dev-dribble/",
-    link: "#",
+    title: "DevScribble",
+    github: "https://github.com/pankajk787/dev-scribble/",
+    link: "https://dev-scribble.onrender.com/",
     image: devdribble_ai,
     content:
-      "A realtime collaborative code editor and canvas editor. It allows multiple users to edit code and draw in canvas in real-time.",
+      "A realtime collaborative platform enabling users to code, draw on canvas, and communicate via text and audio in shared rooms, \
+      built to streamline and simplify the challenges of virtual technical interviews.",
     stack: [
       {
         id: "icon-1",
@@ -415,28 +392,79 @@ export const projects = [
     github: "https://github.com/pankajk787/trans-fi",
     link: "https://trans-fi.onrender.com/",
     image: transferfi,
-    content:
-      "",
+    content: "A seamless file-sharing application that enables users to upload, share via email or links, and download files effortlessly. \
+    A scheduled cron job that automatically deletes expired files from AWS S3 every 24 hours to ensure optimal storage usage and data hygiene.",
     stack: [
       {
         id: "icon-1",
-        icon: SiDjango,
-        name: "Django Rest Framework"
-      },
-      {
-        id: "icon-2",
         icon: SiExpress,
         name: "ExpressJS"
       },
       {
+        id: "icon-2",
+        icon: SiMongodb,
+        name: "MongoDB"
+      },
+      {
         id: "icon-3",
-        icon: SiReplit,
-        name: "Replit"
+        icon: SiJavascript,
+        name: "Vanilla JavaScript"
+      },
+      {
+        id: "icon-4",
+        icon: SiEjs,
+        name: "EJS"
       },
       {
         id: "icon-5",
-        icon: SiFigma,
-        name: "Figma"
+        icon: AiFillHtml5,
+        name: "HTML"
+      },
+      {
+        id: "icon-6",
+        icon: SiCss3,
+        name: "CSS"
+      },
+      {
+        id: "icon-7",
+        icon: FaAws,
+        name: "AWS S3"
+      }
+    ],
+  },
+  {
+    id: "project-4",
+    title: "PredectCOVID",
+    github: "https://github.com/pankajk787/predect-covid/",
+    link: "https://youtu.be/qaKSGsFPQqM/",
+    image: predectcovid,
+    content:
+      "A powerful machine learning model that predicts a patient's likelihood of COVID-19 infection based on symptoms, coupled with real-time tracking of COVID data across India for up-to-date insights.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiFlask,
+        name: "Flask"
+      },
+      {
+        id: "icon-2",
+        icon: SiBootstrap,
+        name: "Bootstrap"
+      },
+      {
+        id: "icon-3",
+        icon: DiSqllite,
+        name: "SQLLite"
+      },
+      {
+        id: "icon-4",
+        icon: SiPython,
+        name: "Python"
+      },
+      {
+        id: "icon-5",
+        icon: SiScikitlearn ,
+        name: "Scikit-learn"
       },
     ],
   },
@@ -490,42 +518,6 @@ export const projects = [
         icon: SiMongodb,
         name: "MongoDB"
       }
-    ],
-  },
-  {
-    id: "project-4",
-    title: "PredectCOVID",
-    github: "https://github.com/pankajk787/predect-covid/",
-    link: "https://youtu.be/qaKSGsFPQqM/",
-    image: predectcovid,
-    content:
-      "A powerful machine learning model that predicts a patient's likelihood of COVID-19 infection based on symptoms, coupled with real-time tracking of COVID data across India for up-to-date insights.",
-    stack: [
-      {
-        id: "icon-1",
-        icon: SiFlask,
-        name: "Flask"
-      },
-      {
-        id: "icon-2",
-        icon: SiBootstrap,
-        name: "Bootstrap"
-      },
-      {
-        id: "icon-3",
-        icon: DiSqllite,
-        name: "SQLLite"
-      },
-      {
-        id: "icon-4",
-        icon: SiPython,
-        name: "Python"
-      },
-      {
-        id: "icon-5",
-        icon: SiScikitlearn ,
-        name: "Scikit-learn"
-      },
     ],
   },
   {
@@ -622,13 +614,12 @@ export const projects = [
   },
 ];
 
-// Add links to blogs here
 export const blogPosts = [
   {
     id: "post-1",
     title: "Blog Post 01 - Title",
     link: "#",
-    date: new Date().toLocaleDateString(), // Can be edited to any string format
+    date: new Date().toLocaleDateString(),
     image: "https://via.placeholder.com/600/92c952",
     tags: [
       {
@@ -689,7 +680,6 @@ export const blogPosts = [
   },
 ];
 
-// Highlight your GitHub stats like - Organisation, Issues Opened, Pull Requests etc.
 export const stats = [
   {
     id: "stats-1",
@@ -708,7 +698,7 @@ export const stats = [
   },
 ];
 
-// Links to your social media profiles
+// Links to social media profiles
 export const socialMedia = [
   {
     id: "social-media-1",
@@ -737,7 +727,7 @@ export const socialMedia = [
   },
 ];
 
-// Your professional summary
+// Professional summary
 export const aboutMe = {
     name: "Pankaj Kumar",
     githubUsername: 'pankajk787',
@@ -748,5 +738,4 @@ export const aboutMe = {
 // The maximum number of PRs to be displayed in the Open Source Contributions section.
 export const itemsToFetch = 20;
 
-// Add names of GitHub repos you'd like to display open source contributions from in the 'org/repo' format. 
 export const includedRepos = [];
